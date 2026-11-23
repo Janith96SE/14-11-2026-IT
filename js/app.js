@@ -69,3 +69,19 @@ console.log(Student);
 // defined with some other type (eg:String ,int) you couldn't change that but let immidetely get what you 
 //created in last
 
+
+
+//---------------------IN BUILD FUNCTION IN ARRAY LIST----------------------
+
+// const customerList=[];
+
+// customerList.push(1);
+// customerList.push(2);
+// customerList.push(3);
+// customerList.push(4);
+// customerList.push(5);
+
+// console.log (customerList);
+// customerList.reverse();
+// console.log (customerList);
+
