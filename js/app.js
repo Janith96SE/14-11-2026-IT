@@ -109,3 +109,6 @@ const productList =[
 
 let inStock = productList.filter(product=>product.inStock==true);
 console.log(inStock)
+
+let inStock1 = productList.filter(product=>product.inStock);
+console.log(inStock1)
