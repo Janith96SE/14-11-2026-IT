@@ -148,4 +148,25 @@
 
 fetch("https://jsonplaceholder.typicode.com/posts/").then(response=>response.json()).then(data=>{
 console.log(data);
+
+let table = document.getElementById("tbldata");
+
+let tableBody="";
+
+data.forEach(element => {
+    tableBody +=`
+      <tr>
+                <td>${element.userId}</td>
+                <td>${element.id}</td>
+                <td>${element.title}</td>
+                <td>${element.body}</td>
+                
+                
+                
+     </tr> 
+    `
 });
+table.innerHTML=tableBody;
+          
+});
+
