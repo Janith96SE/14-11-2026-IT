@@ -123,8 +123,22 @@
 
 //----------------Map------------
 
-const salaryList =[10000,20000,30000,40000,50000];
-console.log (salaryList);
+// const salaryList =[10000,20000,30000,40000,50000];
+// console.log (salaryList);
 
-let newSalaryList=salaryList.map(salary=>salary*2);
-console.log(newSalaryList);
+// let newSalaryList=salaryList.map(salary=>salary*2);
+// console.log(newSalaryList);
+
+//------------Find Method-------------
+
+const studentList=[
+    {name:"Nimal",age:25},
+    {name:"Kamal",age:26},
+    {name:"Sunil",age:27}
+]
+
+let findStudent=studentList.find(student=>student.name=="Kamal");
+console.log(findStudent);
+
+let findStudent1=studentList.find(student=>student.age=="25");
+console.log(findStudent1);
