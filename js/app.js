@@ -113,8 +113,18 @@
 // let inStock1 = productList.filter(product=>product.inStock);
 // console.log(inStock1)
 
-const letterList=["e","a","f","b","d","c"];
-console.log(letterList);
+// -----------Sorting-------------
 
-letterList.sort();
-console.log(letterList);
+// const letterList=["e","a","f","b","d","c"];
+// console.log(letterList);
+
+// letterList.sort();
+// console.log(letterList);
+
+//----------------Map------------
+
+const salaryList =[10000,20000,30000,40000,50000];
+console.log (salaryList);
+
+let newSalaryList=salaryList.map(salary=>salary*2);
+console.log(newSalaryList);
