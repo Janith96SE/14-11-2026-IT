@@ -87,28 +87,34 @@
 
 //filter method
 
-const productList =[
-    {name:"bun",inStock:true,price :50},
-    {name:"milk",inStock:false,price:100},
-    {name:"egg",inStock:true,price:15},
-    {name:"bread",inStock:false,price:80},
-    {name:"butter",inStock:true,price:150}
-]
+// const productList =[
+//     {name:"bun",inStock:true,price :50},
+//     {name:"milk",inStock:false,price:100},
+//     {name:"egg",inStock:true,price:15},
+//     {name:"bread",inStock:false,price:80},
+//     {name:"butter",inStock:true,price:150}
+// ]
 
-// let inStockProductList = productList.filter(
-//     function (product){
-//        return product.inStock==true;
-//     }
-// );
-// console.log(inStockProductList);
+// // let inStockProductList = productList.filter(
+// //     function (product){
+// //        return product.inStock==true;
+// //     }
+// // );
+// // console.log(inStockProductList);
 
-// function productFilter(product){
-//     return product.inStock==true;
-// }
-// console.log(inStockProductList);
+// // function productFilter(product){
+// //     return product.inStock==true;
+// // }
+// // console.log(inStockProductList);
 
-let inStock = productList.filter(product=>product.inStock==true);
-console.log(inStock)
+// let inStock = productList.filter(product=>product.inStock==true);
+// console.log(inStock)
 
-let inStock1 = productList.filter(product=>product.inStock);
-console.log(inStock1)
+// let inStock1 = productList.filter(product=>product.inStock);
+// console.log(inStock1)
+
+const letterList=["e","a","f","b","d","c"];
+console.log(letterList);
+
+letterList.sort();
+console.log(letterList);
