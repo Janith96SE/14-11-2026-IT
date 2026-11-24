@@ -41,27 +41,27 @@
 // }
 
 
-let customer=["Nimal","Amal","Kamal"];
-console.log(customer);
-console.log(typeof customer);
+// let customer=["Nimal","Amal","Kamal"];
+// console.log(customer);
+// console.log(typeof customer);
 
-customer= "Kavindu"; // you can see in local host, it will get the current type  Kavindu & it will declare in String
+// customer= "Kavindu"; // you can see in local host, it will get the current type  Kavindu & it will declare in String
 
-// customer.push("Kavindu");
+// // customer.push("Kavindu");
 
 
-console.log(customer);
-console.log(typeof customer);
+// console.log(customer);
+// console.log(typeof customer);
 
-// 
+// // 
 
-const Student = ["Sirimal","Kaveen","Lal"];
-console.log(Student);
+// const Student = ["Sirimal","Kaveen","Lal"];
+// console.log(Student);
 
-Student="Nimesh"; // you can see in local host you couldn't see anything
-// Student.push("Nimesh");
+// Student="Nimesh"; // you can see in local host you couldn't see anything
+// // Student.push("Nimesh");
 
-console.log(Student);
+// console.log(Student);
 
 //When you use let,it will flexible to get what you make type or value but when you use 
 //const you couldn't able to change the type or value during the defind the objects therfore 
@@ -85,3 +85,24 @@ console.log(Student);
 // customerList.reverse();
 // console.log (customerList);
 
+//filter method
+
+const productList =[
+    {name:"bun",inStock:true,price :50},
+    {name:"milk",inStock:false,price:100},
+    {name:"egg",inStock:true,price:15},
+    {name:"bread",inStock:false,price:80},
+    {name:"butter",inStock:true,price:150}
+]
+
+let inStockProductList = productList.filter(
+    function (product){
+       return productFilter(product)
+    }
+);
+// console.log(inStockProductList);
+
+function productFilter(product){
+    return product.inStock==true;
+}
+console.log(inStockProductList);
