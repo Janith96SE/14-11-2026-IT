@@ -131,14 +131,21 @@
 
 //------------Find Method-------------
 
-const studentList=[
-    {name:"Nimal",age:25},
-    {name:"Kamal",age:26},
-    {name:"Sunil",age:27}
-]
+// const studentList=[
+//     {name:"Nimal",age:25},
+//     {name:"Kamal",age:26},
+//     {name:"Sunil",age:27}
+// ]
 
-let findStudent=studentList.find(student=>student.name=="Kamal");
-console.log(findStudent);
+// let findStudent=studentList.find(student=>student.name=="Kamal");
+// console.log(findStudent);
 
-let findStudent1=studentList.find(student=>student.age=="25");
-console.log(findStudent1);
+// let findStudent1=studentList.find(student=>student.age=="25");
+// console.log(findStudent1);
+
+
+// -------JSON(Java Script Object Notation)---------
+
+fetch("/customer.json").then(response=>response.json()).then(data=>{
+console.log(data);
+});
