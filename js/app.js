@@ -95,14 +95,17 @@ const productList =[
     {name:"butter",inStock:true,price:150}
 ]
 
-let inStockProductList = productList.filter(
-    function (product){
-       return product.inStock==true;
-    }
-);
-console.log(inStockProductList);
+// let inStockProductList = productList.filter(
+//     function (product){
+//        return product.inStock==true;
+//     }
+// );
+// console.log(inStockProductList);
 
 // function productFilter(product){
 //     return product.inStock==true;
 // }
 // console.log(inStockProductList);
+
+let inStock = productList.filter(product=>product.inStock==true);
+console.log(inStock)
