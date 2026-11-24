@@ -97,12 +97,12 @@ const productList =[
 
 let inStockProductList = productList.filter(
     function (product){
-       return productFilter(product)
+       return product.inStock==true;
     }
 );
-// console.log(inStockProductList);
-
-function productFilter(product){
-    return product.inStock==true;
-}
 console.log(inStockProductList);
+
+// function productFilter(product){
+//     return product.inStock==true;
+// }
+// console.log(inStockProductList);
